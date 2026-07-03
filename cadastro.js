@@ -24,8 +24,15 @@ async function carregarContatos () {
     alert ("Não foi possivel carrregar contatos.");
   }
 }
-document.getElementById("btnCadastrar").addventListener("click", async () +> {
-   const nome = document.getElemetById("nome").value.trim();
-  const nome = document.getElemetById("nome").value.trim();
+document.getElementById("btnCadastrar").addventListener("click", async () => {
+    const nome = document.getElemetById("nome").value.trim();
+    const telefone = document.getElemetById("telefone").value.trim();
+    const email = document.getElemetById("emaill").value.trim();
 
-       
+  if (!nome) {
+    alert ("preencha o nome.");
+    return;
+  }
+
+   
+
